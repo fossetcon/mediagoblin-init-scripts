@@ -2,13 +2,15 @@
 # /etc/init.d/mediagoblin-paster
 #
 ## LICENSE: CC0 <http://creativecommons.org/publicdomain/zero/1.0/>
-# To the extent possible under law, Joar Wandborg <http://wandborg.se> has
+# To the extent possible under law, Bryan Smith <http://fossetcon.org> has
 # waived all copyright and related or neighboring rights to
-# mediagoblin-paster. This work is published from Sweden.
+# mediagoblin-paster. This work is published from the US.
 #
 ## CREDIT
-# Credit goes to jpope <http://jpope.org/> and 
-# chimo <http://chimo.chromic.org/>. From which' Arch init scripts this is
+# Credit goes to jpope <http://jpope.org/> 
+# chimo <http://chimo.chromic.org/>.
+# Joar Wandborg <http://wandborg.se>
+# From which' Arch init scripts this is
 # based upon.
 #
 ### BEGIN INIT INFO
