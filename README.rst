@@ -2,9 +2,6 @@
 GNU MediaGoblin init scripts
 ============================
 
-.. image:: http://api.flattr.com/button/flattr-badge-large.png
-    :target: http://flattr.com/thing/695398/jwandborgmediagoblin-init-scripts-on-GitHub
-
 Run your MediaGoblin server and task queue as services that start
 automatically on reboot.
 
