@@ -27,8 +27,8 @@
 # CHANGE THIS
 # to suit your environment
 ################################################################################
-MG_ROOT=/home/joar/git/mediagoblin
-MG_USER=joar
+MG_ROOT=/srv/mediagoblin
+MG_USER=mediagoblin
 ################################################################################
 # NOW STOP
 # You probably won't have to change anything else.
@@ -69,13 +69,13 @@ case "$1" in
             MG_PASTE_INI=$MG_ROOT/paste.ini
 	fi
         if [ -z "$(getPID)" ]; then
-            su -s /bin/sh -c "CELERY_ALWAYS_EAGER=False $MG_PASTER_BIN serve \
+            su -c "CELERY_ALWAYS_EAGER=False $MG_PASTER_BIN serve \
                 $MG_PASTE_INI \
                 --server-name=fcgi \
                 fcgi_host=$MG_FCGI_HOST fcgi_port=$MG_FCGI_PORT \
                 --pid-file=$MG_PASTER_PID_FILE \
                 --log-file=$MG_PASTER_LOG_FILE \
-                --daemon" - $MG_USER 2>&1 > /dev/null
+                --daemon" $MG_USER 2>&1 > /dev/null
 
             PASTER_RESULT=$?
 
